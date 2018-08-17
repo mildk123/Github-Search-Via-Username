@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub User Search</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="lib/css/style.css" />
+    <link rel="stylesheet" href="lib/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/css/bootstrap-grid.css" />
+
+</head>
+
+<body>
+    <header class="container-fluid bg-info">
+        <div class="col-6 bg-danger">
+            <h3 class="display-4 text-center font-weight-bold text-uppercase bg-light">Github Search</h3>
+        </div>
+    </header>
+
+
+
+    <input type="text" class="form-control col-12" onkeypress="searchUserFromGithub(this)" id="userInput" placeholder="Search Anyone From Github" />
+    
+    <form id="backDrop" class="form-group bg-info">
+        
+        <img class="avatar bg-info" src="images/avatar.png" id="userAvatar"  alt="User's Avatar">    
+        
+       <div class="details-group bg-info">
+            <input class="nameSpace" id="name"          type="text" placeholder="Jhon Doe">
+            <input class="nameSpace" id="company"       type="text" placeholder="Company">
+            <input class="nameSpace" id="type"          type="text" placeholder="Type">
+            <input class="nameSpace" id="location"      type="text" placeholder="Address">
+            <input class="nameSpace" id="followers"     type="text" placeholder="followers">
+            <input class="nameSpace" id="following"     type="text" placeholder="following">
+            <input class="nameSpace" id="public_repos"  type="text" placeholder="Public Repositories">
+            <input class="nameSpace" id="hireable"      type="text" placeholder="Are they hireable?">
+            <input class="nameSpace" id="bio"           type="text" placeholder="User's Bio">
+            <input class="nameSpace" id="url"           type="text" placeholder="Profile link">
+            <input class="nameSpace" id="id"            type="text" placeholder="ID No.">
+            <input class="nameSpace" id="userName"      type="text" placeholder="Public Repositories">
+        </div>
+        
+        
+    </form>
+
+
+
+
+
+        <!-- JavaScript  -->
+        <script src="lib/js/script.js"></script>
+</body>
+
+</html>
